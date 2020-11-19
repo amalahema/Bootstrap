@@ -1,0 +1,110 @@
+
+PS C:\Full Stack Web Development -Coursera\conFusion> git init
+Reinitialized existing Git repository in C:/Full Stack Web Development -Coursera/conFusion/.git/
+PS C:\Full Stack Web Development -Coursera\conFusion> git status
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .DS_Store
+        .gitignore
+        index.html
+        package-lock.json
+        package.json
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+warning: CRLF will be replaced by LF in .gitignore.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in style.css.
+The file will have its original line endings in your working directory
+PS C:\Full Stack Web Development -Coursera\conFusion> git status
+On branch master
+
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   package-lock.json
+        new file:   style.css
+
+PS C:\Full Stack Web Development -Coursera\conFusion> git commit -m "First commit"
+[master (root-commit) 73c3a60] First commit
+ 6 files changed, 4262 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .gitignore
+ create mode 100644 index.html
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 style.css
+PS C:\Full Stack Web Development -Coursera\conFusion> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Full Stack Web Development -Coursera\conFusion> git log --oneline
+73c3a60 (HEAD -> master) First commit
+PS C:\Full Stack Web Development -Coursera\conFusion> git remote add origin https://github.com/amalahema/git-test.git
+fatal: remote origin already exists.
+PS C:\Full Stack Web Development -Coursera\conFusion> git push -u origin master
+info: please complete authentication in your browser...
+ create mode 100644 style.css
+PS C:\Full Stack Web Development -Coursera\conFusion> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Full Stack Web Development -Coursera\conFusion> git log --oneline
+73c3a60 (HEAD -> master) First commit
+PS C:\Full Stack Web Development -Coursera\conFusion> git remote add origin https://github.com/amalahema/git-test.git
+fatal: remote origin already exists.
+PS C:\Full Stack Web Development -Coursera\conFusion> git push -u origin master
+info: please complete authentication in your browser...
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 39.05 KiB | 1.95 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/amalahema/git-test.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+On branch master
+Your branch is up to date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        First Home Page.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Full Stack Web Development -Coursera\conFusion> git add .
+warning: CRLF will be replaced by LF in First Home Page.txt.
+PS C:\Full Stack Web Development -Coursera\conFusion> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+Changes to be committed:
+        new file:   First Home Page.txt
+
+PS C:\Full Stack Web Development -Coursera\conFusion> git commit -m "first home page"
+[master ee99dbe] first home page
+ 1 file changed, 118 insertions(+)
+ create mode 100644 First Home Page.txt
+PS C:\Full Stack Web Development -Coursera\conFusion> git remote add origin https://amalahema@bitbucket.org/amalahema/git-test.git
+fatal: remote origin already exists.
+PS C:\Full Stack Web Development -Coursera\conFusion> git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.00 KiB | 511.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/amalahema/git-test.git
+   73c3a60..ee99dbe  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Full Stack Web Development -Coursera\conFusion>
+
+
+
+
+
+
+
+
+
+
