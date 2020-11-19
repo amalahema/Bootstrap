@@ -97,7 +97,7 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/amalahema/git-test.git
    73c3a60..ee99dbe  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
-PS C:\Full Stack Web Development -Coursera\conFusion>
+
 
 
 
