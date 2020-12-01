@@ -15,10 +15,7 @@ Untracked files:
         style.css
 
 nothing added to commit but untracked files present (use "git add" to track)
-warning: CRLF will be replaced by LF in .gitignore.
-The file will have its original line endings in your working directory
-warning: CRLF will be replaced by LF in style.css.
-The file will have its original line endings in your working directory
+
 PS C:\Full Stack Web Development -Coursera\conFusion> git status
 On branch master
 
