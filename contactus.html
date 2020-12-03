@@ -92,9 +92,71 @@
               <h3>Send us your Feedback</h3>
            </div>
             <div class="col-12 col-md-9">
-                Form goes here
-            </div>
-             <div class="col-12 col-md">
+                <form>
+                    <!--this below div used to deign a row-->
+                   <div class="form-group row"><!--Each form element and label needs to be in its own form-group class. If they are not, the spacing style will not be applied.-->
+                       <label for="firstname" class="col-md-2 col-form-label">First Name</label><!--occupies 2 left column on the particular row-->
+                          <div class="col-md-10"><!--design right side textbox with 10 columns & total is 12-->
+                             <input type="text" class="form-control" id="firstname" name="firstname"
+                              placeholder="First Name">
+                          </div>
+                   </div>
+                    <div class="form-group row">
+                        <label for="lastname" class="col-md-2 col-form-label">Last Name</label> <!--occupies 2 left column on the particular row-->
+                          <div class="col-md-10"><!--design right side textbox with 10 columns & total is 12-->
+                             <input type="text" class="form-control" id="lastname" name="lastname"
+                              placeholder="Last Name">
+                          </div>
+                    </div>
+                    <div class="form-group row"><!--this is a botstrap class, class="form-group" has applied spacing, while the form without class="form-group" doesn't apply spacing between one item ti another. -->
+                        <label for="telnum" class="col-12 col-md-2 col-form-label">Contact Tel.</label> <!--col-12 means 12 col for small screen & col-md-2 occupies 2 left column on the particular row-->
+                          <div class="col-5 col-md-3"><!--col-5 for extrasmall & 3 cols for medium screen,this is the bootstrap class-->
+                             <input type="tel" class="form-control" id="areacode" name="areacode"
+                              placeholder="Area code">
+                          </div>
+                          <div class="col-7 col-md-7"><!--remainining 7 columns for extrasmall already u use 5 for areacode-->
+                            <input type="tel" class="form-control" id="telnum" name="telnum"
+                             placeholder="Tel.Number">
+                         </div>
+                    </div>
+                    <div class="form-group row"><!--form-row means it adds some space beweeen the field when compared to class="row"-->
+                        <label for="emailid" class="col-md-2 col-form-label">Email</label> <!--occupies 2 left column on the particular row-->
+                          <div class="col-md-10"><!--design right side textbox with 10 columns & total is 12-->
+                             <input type="email" class="form-control" id="emailid" name="emailid"
+                              placeholder="Enter Email id">
+                          </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 offset-md-2"><!-- increase the left margin of a column by * column and occupies 6 columns-->
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" name="approve" id="approve" value="">
+                                <label class="form-check-label" for="approve">
+                                   <strong>May We contact u</strong>
+                                </label>
+                            </div>
+                        </div>                
+                            <div class="col-md-3 offset-md-1"><!--partciular bootstrap class applied to the html tag division(div)elememt-->
+                                <select class="form-control">
+                                  <option>Tel</option>
+                                  <option>Email</option>
+                                </select>
+                            </div>
+                     </div>        
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Give Your Feedback</label> <!--occupies 2 left column on the particular row-->
+                          <div class="col-md-10"><!--design right side textbox with 10 columns & total is 12-->
+                             <textarea class="form-control" id="feedback" name="feedback"
+                              rows="12"></textarea>
+                          </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn-primary">
+                                Send Feedback
+                            </button>
+                        </div>
+                    </div>
+                 </form>
             </div>
        </div>
 
