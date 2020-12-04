@@ -16,16 +16,12 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top">
-        <!--navbar is a bootstrap class -->
-        <div class="container">
-           <!--it is used to define the width of the container if did not use the content of the navbar spread over the rest of the page-->
-           <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#Navbar"> 
-               <!--data-target is the id of other html  element is particularly targeted to the navbar-->
-               <span class="navbar-toggler-icon"></span>
-               <!--data-toggle is a boot strap java script component-->
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top"><!--navbar is a bootstrap class -->
+        <div class="container"><!--it is used to define the width of the container if did not use the content of the navbar spread over the rest of the page-->
+           <button class="navbar-toggler"type="button" data-toggle="collapse" data-target="#Navbar"> <!--data-target is the id of other html  element is particularly targeted to the navbar-->
+               <span class="navbar-toggler-icon"></span> <!--data-toggle is a boot strap java script component-->
            </button>  
-           <a class="navbar-brand mr-auto" href="#">Ristorante Con Fusion</a>  <!--used to display some branding information in my navbar may be logo and name of the company-->
+           <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png"height="30" widthe="41"></a>  <!--used to display some branding information in my navbar may be logo and name of the company-->
            <div class="collapse navbar-collapse" id="Navbar">
               <ul class="navbar-nav mr-auto"><!--display the content to the left side using utility class auto-->
                   <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
@@ -44,7 +40,8 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -52,20 +49,20 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4  order-sm-last col-md-3">
-                <!--order-sm-last used to display column in right side of the screen-->
+            <div class="col-12 col-sm-4  order-sm-last col-md-3"><!--order-sm-last used to display column in right side of the screen-->
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
-            <div class="col-12 col-sm order-sm-first col-md">
-                 <!--order-sm-last used to display column in left side of the screen-->
-                <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+            <div class="col-12 col-sm order-sm-first col-md"> <!--order-sm-last used to display column in left side of the screen-->
+                 <div class="media">
+                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="uthapizza"><!---mr-3 right margin space-->
+                     <div class="media-body">
+                        <h2 class="mt-0">Uthappizza</h2><!--mt-0 means margin top is zero,title aligned to top of the particular object-->
+                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                     </div>
+                 </div>
             </div>
         </div>
-
-
-        <div class="row row-content align-items-center">
-            <!--align-items-center gives verical alignmant to that row-->
+        <div class="row row-content align-items-center"><!--align-items-center gives verical alignmant to that row-->
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
             </div>
@@ -80,20 +77,23 @@
                 <h3>Meet our Culinary Specialists</h3>
             </div>
             <div class="col-12 col-sm order-sm-first col-md">
-                <h2>Alberto Somayya</h2>
-                <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center"
+                    src="img/alberto.png" alt="alberto">
+                    <div class="media-body">
+                        <h2 class="mt-0">Alberto Somayya</h2>
+                        <h4>Executive Chef</h4>
+                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <footer class="footer">
-        <div class="container">
-            <!--Inside the footer container, class row used to create a 3 section side by side -->
-            <div class="row">     
-                <!--col class used to seperalte the 3 sections  within a particular measurement-->        
-                <div class="col-4 offset-1 col-sm-2">
-                    <!-- class offset  used to push the below content one column form the right side-->
+        <div class="container"><!--Inside the footer container, class row used to create a 3 section side by side -->
+            <div class="row"> <!--col class used to seperalte the 3 sections  within a particular measurement-->        
+                <div class="col-4 offset-1 col-sm-2"><!-- class offset  used to push the below content one column form the right side-->
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
