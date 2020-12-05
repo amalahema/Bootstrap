@@ -2,11 +2,13 @@
     margin: 0px auto;
     padding: 0px auto;
 }
+
 .row-content
 {
     margin: 0px auto;
     padding: 50 px 0 px 50 px 0px;
     border-bottom: 1px ridge;
+    
     min-height: 400 px;
 }
 .footer
