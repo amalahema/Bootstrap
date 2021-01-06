@@ -70,11 +70,15 @@ background-color: #512DA8;
  min-height: 300px;
 
 }
-
-
  .modal-dialog
  {
     color:black;
  }
-
+ /*To keep the Carousel in the right corner*/
+ #carouselButton {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+}
   
