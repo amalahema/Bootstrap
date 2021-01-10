@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <title>Ristorante Con Fusion</title>
@@ -28,19 +28,61 @@
                         About</a></li>
                 <li class="nav-item"><a class="nav-link" href="./Menu.html"><span class="fa fa-list fa-lg"></span>
                         Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address fa-lg"></span> Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contactus.html"><span
+                            class="fa fa-address fa-lg"></span> Contact</a></li>
             </ul>
-          
+            <!--Login -->
+            
+            <span class="navbar-text">
+                    <a id="login">
+                     <span class="fa fa-sign-in"  id="login"></span> Login</a>
+                     <div id="loginModal" class="modal fade" role="dialog" data-backdrop="false">
+                        <div class="modal-dialog modal-lg" role="content">
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Login </h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-sm-4">
+                                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group col-sm-4">
+                                                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                                                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+                                            </div>
+                                            <div class="col-sm-auto">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label"> Remember me
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                            <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </span>
         </div>
         </div>
     </nav>
-   
 
-        </div>
+
+    </div>
     </div>
     </div>
     <!--header-->
-  <header class="jumbotron">
+    <header class="jumbotron">
         <!--container-->
         <div class="container">
             <div class="row row-header">
@@ -48,122 +90,130 @@
                     <!--Decription occupies six columnus-->
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
-                       lipsmacking creations will tickle your culinary senses!</p>
+                        lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                
-                 <!--logo and button share the columns in the right side-->
+
+                <!--logo and button share the columns in the right side-->
                 <div class="col-12 col-sm-3 order-sm-last">
                     <img src="img/logo.png" class="img-fluid">
                 </div>
-                
+
                 <!--Reserve Button-->
-                <div class="col-12 col-sm-3 order-sm-last align-self-center mx-auto"> <!--<a href="#reserveform"></a>-->
-                    <button class="btn btn-warning btn-sm btn-block" data-toggle="modal" data-target="#ReservationModal">
-                        Reserve  Table
+                <div class="col-12 col-sm-3 order-sm-last align-self-center mx-auto">
+                        <button class="btn btn-warning btn-sm btn-block" id="reservebutton">
+                        Reserve Table
                     </button>
                 </div>
-             
+
 
                 <!--modal-->
-                <div class="modal fade" id="ReservationModal" role="dialog" data-backdrop="false"> <!--fade look , dialog means it shows on the top of the page-->
+                <div class="modal fade" id="ReservationModal" role="dialog" data-backdrop="false">
+                    <!--fade look , dialog means it shows on the top of the page-->
                     <div class="modal-dialog modal-lg" role="content">
-                         <div class="modal-content"> 
-                         <!-- Modal Header -->
-                         <div class="modal-header">
-                          <h4 class="modal-title">Reserve a Table</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
+                        <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Reserve a Table</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
 
-                        <!--Modal body-->
-                         <div class="modal-body">
-                         <form>   
-                          <div class="form-group row">                      
-                              <label for="firstname" class="col-md-2 col-form-label">Number Of Guests</label>   
+                            <!--Modal body-->
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="firstname" class="col-md-2 col-form-label">Number Of Guests</label>
 
-                                   <div class="col-md-10">
+                                        <div class="col-md-10">
 
-                                       <div class="form-check-inline">
-                                         <label class="form-check-label">
-                                            <input type="radio" class="ml-2" name="opt">1
-                                         </label>
-                                        </div>   
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="ml-2" name="opt">1
+                                                </label>
+                                            </div>
 
-                                        <div class="form-check-inline">
-                                          <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="opt">2
-                                          </label>
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="opt">2
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="opt">3
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="opt">4
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="opt">5
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check-inline">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="opt">6
+                                                </label>
+                                            </div>
                                         </div>
-                    
-                                       <div class="form-check-inline">
-                                          <label class="form-check-label">
-                                            <input type="radio" class="form-check-input" name="opt">3
-                                          </label>
-                                        </div>
-
-                                       <div class="form-check-inline">
-                                         <label class="form-check-label">
-                                           <input type="radio" class="form-check-input" name="opt">4
-                                        </label>
-                                      </div>
-
-                                       <div class="form-check-inline">
-                                          <label class="form-check-label">
-                                          <input type="radio" class="form-check-input" name="opt">5
-                                          </label>
-                                        </div>
-
-                                       <div class="form-check-inline">
-                                         <label class="form-check-label">
-                                         <input type="radio" class="form-check-input" name="opt">6
-                                        </label>
-                                       </div>
                                     </div>
-                       </div>
-                    
-                    <!--section button-->    
-                       <div class="form-group row">
-                            <label for="section" class="col-md-2 col-form-label">Section</label>
-                            <div class="col-5">
-                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-success active">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
-                                     </label>
-                                    <label class="btn btn-danger">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Smoking
-                                     </label>
-                               </div>
-                          </div>
-                         
-                       </div>
-                      
-                   
-                    <!--Date & Time-->     
-                        <div class="form-group row">
-                          <label for="inputDate" class="col-md-2 col-form-label">Date & Time</label>
-                           <div class="col-5 col-md-4">
-                               <input type="date" class="form-control" id="inputDate" placeholder="Date">
-                           </div>
-                           <div class="col-5 col-md-4">
-                               <input type="time" class="form-control" id="inputTime" placeholder="Time">
-                           </div>
-                        </div>
 
-                    <!--button-->
-                    <div class="form-group row">
-                        <div class="offset-md-2 col-md-4">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                            <button type="submit" class="btn btn-primary">Reserve</button>
+                                    <!--section button-->
+                                    <div class="form-group row">
+                                        <label for="section" class="col-md-2 col-form-label">Section</label>
+                                        <div class="col-5">
+                                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                                <label class="btn btn-success active">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off"
+                                                        checked> Non-Smoking
+                                                </label>
+                                                <label class="btn btn-danger">
+                                                    <input type="radio" name="options" id="option1" autocomplete="off"
+                                                        checked> Smoking
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <!--Date & Time-->
+                                    <div class="form-group row">
+                                        <label for="inputDate" class="col-md-2 col-form-label">Date & Time</label>
+                                        <div class="col-5 col-md-4">
+                                            <input type="date" class="form-control" id="inputDate" placeholder="Date">
+                                        </div>
+                                        <div class="col-5 col-md-4">
+                                            <input type="time" class="form-control" id="inputTime" placeholder="Time">
+                                        </div>
+                                    </div>
+
+                                    <!--button-->
+                                    <div class="form-group row">
+                                        <div class="offset-md-2 col-md-4">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-dismiss="modal">Cancel</button>
+                                            <button type="submit" class="btn btn-primary">Reserve</button>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
                         </div>
+                        <!--modal-body-->
                     </div>
+                    <!--content-->
+                </div>
+                <!--div row header-->
+            </div>
+            <!--reservation modal div-->
+    </header>
 
-                 </form>
-               </div>
-             </div><!--modal-body-->
-         </div><!--content-->
-    </div><!--div row header-->
-   </div><!--reservation modal div-->
- </header> 
-                           
 
     <div class="container">
 
@@ -289,7 +339,7 @@
         </div>
         <br></br>
 
-      
+
         <br></br>
     </div>
 
@@ -345,20 +395,31 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!--Java script for Carousel-->
+    <!--Java script for Modal-->
     <script>
-       $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
+        $(document).ready(function () {
+            // Attach Button click event listener 
+            $("#reservebutton").click(function () {
+                $('#ReservationModal').modal('show');
             });
+             $("#login").click(function () {
+                $('#loginModal').modal('show');
+            });
+        });
+     
+        $("#carouselButton").click(function () {
+            if ($("#carouselButton").children("span").hasClass('fa-pause')) {
+                $("#mycarousel").carousel('pause');
+                $("#carouselButton").children("span").removeClass('fa-pause');
+                $("#carouselButton").children("span").addClass('fa-play');
+            }
+            else if ($("#carouselButton").children("span").hasClass('fa-play')) {
+                $("#mycarousel").carousel('cycle');
+                $("#carouselButton").children("span").removeClass('fa-play');
+                $("#carouselButton").children("span").addClass('fa-pause');
+            }
+        });
+
     </script>
 
 </body>
