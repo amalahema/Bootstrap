@@ -82,12 +82,12 @@ body{
 .modal
 {
   .modal-header{
-    background:$background-dark;
+    background:$background-dark;//variable already declared 
     color: floralwhite;}
   .modal-body {
     background:$background-pale;
     color: rgb(12, 11, 11);} 
   .close {
-    color: floralwhite; 
+    color:floralwhite; 
   }
  }
